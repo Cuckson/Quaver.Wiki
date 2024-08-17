@@ -327,7 +327,7 @@ The client interface includes general skin elements that are present in all game
 
 | Animatable | Alignment | Optimal Size |
 | :--------: | :-------: | :----------: |
-|     No     | TopCenter |   1599x62    |
+|     No     | TopCenter |   1682x99    |
 
 **Notes:**
 
@@ -358,7 +358,7 @@ The client interface includes general skin elements that are present in all game
 
 ![Label Total Score](/docs/images/Results/label-total-score.png?v=2)
 
-###### Label Blue Team Texture Location: `/Results/label-label-blue-team.png`
+###### Label Blue Team Texture Location: `/Results/label-blue-team.png`
 
 ![Label Blue Team](/docs/images/Results/label-blue-team.png?v=2)
 
@@ -403,15 +403,16 @@ The client interface includes general skin elements that are present in all game
 
 ![Background Filter](/docs/images/Results/background-filter.png?v=2)
 
-| Animatable | Alignment |    Optimal Size    |
-| :--------: | :-------: | :----------------: |
-|     No     |     -     | 1920x1080/1920x208 |
+| Animatable |  Alignment  |    Optimal Size    |
+| :--------: | :---------: | :----------------: |
+|     No     |  TopCenter  | 1920x1080/1920x208 |
 
 **Notes:**
 
 - Overlays the background depending on type with normal blend.
 - Drawn on top of `background.png` or map background depending on skin.ini value.
 - 1920x1080 is used for `Background` or `None` type, while 1920x208 is used for `Header` or default.
+- Aligned to the bottom of the MenuBorder line.
 
 ---
 
@@ -423,7 +424,7 @@ The client interface includes general skin elements that are present in all game
 
 | Animatable | Alignment | Optimal Size |
 | :--------: | :-------: | :----------: |
-|     No     |  Center   |   1669x485   |
+|     No     |  Center   |   1682x485   |
 
 **Notes:**
 
@@ -431,15 +432,15 @@ The client interface includes general skin elements that are present in all game
 
 ---
 
-### Multiplayer Table
+### Multiplayer Panel
 
-###### Multiplayer Table FFA Texture Location:`/Results/multiplayer-table-ffa.png`
+###### Multiplayer FFA Panel Texture Location:`/Results/multiplayer-ffa-panel.png`
 
-![Multiplayer Table FFA](/docs/images/Results/multiplayer-table-ffa.png?v=2)
+![Multiplayer FFA Panel](/docs/images/Results/multiplayer-ffa-panel.png?v=2)
 
 | Animatable |  Alignment   | Optimal Size |
 | :--------: | :----------: | :----------: |
-|     No     | BottomCenter |   1669x609   |
+|     No     | BottomCenter |   1682x609   |
 
 ###### Multiplayer Team Panel Texture Location:`/Results/multiplayer-team-panel.png`
 
@@ -447,7 +448,7 @@ The client interface includes general skin elements that are present in all game
 
 | Animatable |  Alignment   | Optimal Size |
 | :--------: | :----------: | :----------: |
-|     No     | BottomCenter |   1669x485   |
+|     No     | BottomCenter |   1682x485   |
 
 **Notes:**
 

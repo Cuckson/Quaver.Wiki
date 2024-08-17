@@ -216,15 +216,16 @@ This section is to manipulate the elements for the Keys game mode including 4K a
 
 ###### Affected Textures: [judge-marv.png](</docs/skins/gameplayinterface#judgement-(marv)>), [judge-perf.png](</docs/skins/gameplayinterface#judgement-(perf)>), [judge-great.png](</docs/skins/gameplayinterface#judgement-(great)>), [judge-good.png](</docs/skins/gameplayinterface#judgement-(good)>), [judge-okay.png](</docs/skins/gameplayinterface#judgement-(okay)>), [judge-miss.png](</docs/skins/gameplayinterface#judgement-(miss)>)
 
-|         Value          | Data Type | Alignment | Default Values | Notes                                                                           |
-| :--------------------: | :-------: | :-------: | :------------: | ------------------------------------------------------------------------------- |
-|  HitErrorChevronSize   |  Integer  |     -     |       8        | The size of the chevron that displays the player's last hit above the hit error |
-|     HitErrorHeight     |  Integer  |     -     |       10       | The height of the hit error                                                     |
-|      HitErrorPosX      |  Integer  | MidCenter |       0        | The X position of the hit error                                                 |
-|      HitErrorPosY      |  Integer  | MidCenter |       45       | The Y position of the hit error                                                 |
-|  JudgementHitBurstFps  |  Integer  |     -     |       60       | The frames per second the judgement hit burst animation will run at             |
-|   JudgementBurstPosY   |  Integer  | MidCenter |       0        | The Y Offset of the judgement hit burst                                         |
-| JudgementHitBurstScale |   Float   |     -     |      100       | The size of the judgement hit burst.                                            |
+|         Value          |  Data Type  | Alignment | Default Values | Notes                                                                               |
+| :--------------------: | :---------: | :-------: | :------------: | ----------------------------------------------------------------------------------- |
+|  HitErrorChevronSize   |     Integer     |     -     |       8        | The size of the chevron that displays the player's last hit above the hit error |
+|     HitErrorHeight     |     Integer     |     -     |       10       | The height of the hit error                                                     |
+|      HitErrorPosX      |     Integer     | MidCenter |       0        | The X position of the hit error                                                 |
+|      HitErrorPosY      |     Integer     | MidCenter |       45       | The Y position of the hit error                                                 |
+|     HitErrorAlpha      | Float (0.0-1.0) |     -     |      0.5       | The alpha of the hit error lines                                                |
+|  JudgementHitBurstFps  |     Integer     |     -     |       60       | The frames per second the judgement hit burst animation will run at             |
+|   JudgementBurstPosY   |     Integer     | MidCenter |       0        | The Y Offset of the judgement hit burst                                         |
+| JudgementHitBurstScale |   Byte(0-255)   |     -     |      100       | The size of the judgement hit burst. 255 = 357x357px at 1080p                   |
 
 ---
 
@@ -323,19 +324,29 @@ This section is to manipulate the elements for the Keys game mode including 4K a
 
 ## Judgement Counter
 
-###### Affected Textures: [judgement-overlay.png](/docs/skins/gameplayinterface#judgement-overlay)
+###### Affected Textures: [judgement-overlay.png](/docs/skins/gameplayinterface#judgement-overlay), [judgement-overlay-background-{marv, perf, great, good, okay, miss}.png](/docs/skins/gameplayinterface#judgement-overlay-background)
 
-|           Value           |       Data Type        | Default Values | Notes                                         |
-| :-----------------------: | :--------------------: | :------------: | --------------------------------------------- |
-|   JudgementCounterAlpha   |    Float (0.0-1.0)     |       1        | The alpha/opacity of the judgement counter    |
-| JudgementCounterFontColor | RGB Color(255,255,255) |  255,255,255   | The color of the judgement counter font       |
-|   JudgementCounterSize    |        Integer         |       40       | The width and height of the judgement counter |
-|      JudgeColorMarv       | RGB Color(255,255,255) |  255,255,255   | The color of the `Marvelous` counter overlay  |
-|      JudgeColorPerf       | RGB Color(255,255,255) |  255,231,107   | The color of the `Perfect` counter overlay    |
-|      JudgeColorGreat      | RGB Color(255,255,255) |   86,254,110   | The color of the `Great` counter overlay      |
-|      JudgeColorGood       | RGB Color(255,255,255) |   0,209,255    | The color of the `Good` counter overlay       |
-|      JudgeColorOkay       | RGB Color(255,255,255) |  217,107,206   | The color of the `Okay` counter overlay       |
-|      JudgeColorMiss       | RGB Color(255,255,255) |   249,100,93   | The color of the `Miss` counter overlay       |
+|            Value            |       Data Type        | Alignment | Default Values | Notes                                                                                                           |
+| :-------------------------: | :--------------------: | :-------: | :------------: | --------------------------------------------------------------------------------------------------------------- |
+|    JudgementCounterAlpha    |    Float (0.0-1.0)     |     -     |       1        | The alpha/opacity of the judgement counter                                                                      |
+|  JudgementCounterFontColor  | RGB Color(255,255,255) |     -     |  255,255,255   | The color of the judgement counter font                                                                         |
+|    JudgementCounterSize     |        Integer         |     -     |       40       | The width and height of the judgement counter                                                                   |
+|       JudgeColorMarv        | RGB Color(255,255,255) |     -     |  255,255,255   | The color of the `Marvelous` counter overlay                                                                    |
+|       JudgeColorPerf        | RGB Color(255,255,255) |     -     |  255,231,107   | The color of the `Perfect` counter overlay                                                                      |
+|       JudgeColorGreat       | RGB Color(255,255,255) |     -     |   86,254,110   | The color of the `Great` counter overlay                                                                        |
+|       JudgeColorGood        | RGB Color(255,255,255) |     -     |   0,209,255    | The color of the `Good` counter overlay                                                                         |
+|       JudgeColorOkay        | RGB Color(255,255,255) |     -     |  217,107,206   | The color of the `Okay` counter overlay                                                                         |
+|       JudgeColorMiss        | RGB Color(255,255,255) |     -     |   249,100,93   | The color of the `Miss` counter overlay                                                                         |
+|    JudgementCounterPosX     |        Integer         | MidRight  |       0        | The horizontal position of the judgement counter relative to its default position                               |
+|    JudgementCounterPosY     |        Integer         | MidRight  |       0        | The vertical position of the judgement counter relative to its default position                                 |
+|   JudgementCounterPadding   |        Integer         |     -     |       0        | The amount of space between the judgement counters                                                              |
+| JudgementCounterHorizontal  | Boolean(True or False) |     -     |     False      | If set to `True`, the judgement counter arranges horizontally instead of vertically                             |
+| JudgementCounterFadeToAlpha | Boolean(True or False) |     -     |     False      | If set to `True`, `judgement-counter-overlay` changes animation to fade with alpha instead of fading with color |
+| UseJudgementColorForNumbers | Boolean(True or False) |     -     |     False      | If set to `True`, color of numbers in judgement counter will use the color based on of judge colors value set   |
+
+**Additional Notes:**
+
+- `JudgeColor{Marv, Perf, Great, Good, Okay, Miss}` values also affect hitlighting tint if enabled in settings and hiterror.
 
 ---
 
@@ -343,9 +354,10 @@ This section is to manipulate the elements for the Keys game mode including 4K a
 
 ###### Affected Textures: [stage-timingbar.png](/docs/skins/gameplayinterface#stage-timing-bar)
 
-|             Value             |       Data Type        | Default Values | Notes                                              |
-| :---------------------------: | :--------------------: | :------------: | -------------------------------------------------- |
-|  SongTimeProgressActiveColor  | RGB Color(255,255,255) |  255,231,107   | The color of the song time progress bar (active)   |
-| SongTimeProgressInactiveColor | RGB Color(255,255,255) |  136,136,136   | The color of the song time progress bar (inactive) |
-|     SongTimeProgressScale     |        Integer         |       45       | The size of the song’s time progress               |
-|        TimingLineColor        | RGB Color(255,255,255) |  255,255,255   | The color of the timing lines                      |
+|             Value             |       Data Type        | Default Values | Notes                                                                                    |
+| :---------------------------: | :--------------------: | :------------: | ---------------------------------------------------------------------------------------- |
+|  SongTimeProgressActiveColor  | RGB Color(255,255,255) |  255,231,107   | The color of the song time progress bar (active)                                         |
+| SongTimeProgressInactiveColor | RGB Color(255,255,255) |  136,136,136   | The color of the song time progress bar (inactive)                                       |
+|     SongTimeProgressScale     |        Integer         |       45       | The size of the song’s time progress                                                     |
+| SongTimeProgressPositionAtTop | Boolean(True or False) |     False      | If set to `True`, The song time progress bar will be positioned at the top of the screen |
+|        TimingLineColor        | RGB Color(255,255,255) |  255,255,255   | The color of the timing lines                                                            |

@@ -354,9 +354,9 @@ Notes:
 
 ![Grade Small A](/docs/images/Grades/grade-small-a.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|     No     |     -     |      None      |
+| Animatable | Alignment |  Suggested Size |
+| :--------: | :-------: | :-------------: |
+|     No     |     -     |      60x60      |
 
 **Notes:**
 
@@ -371,9 +371,9 @@ Notes:
 
 ![Grade Small B](/docs/images/Grades/grade-small-b.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|     No     |     -     |      None      |
+| Animatable | Alignment |  Suggested Size |
+| :--------: | :-------: | :-------------: |
+|     No     |     -     |      60x60      |
 
 **Notes:**
 
@@ -388,9 +388,9 @@ Notes:
 
 ![Grade Small C](/docs/images/Grades/grade-small-c.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|     No     |     -     |      None      |
+| Animatable | Alignment |  Suggested Size |
+| :--------: | :-------: | :-------------: |
+|     No     |     -     |      60x60      |
 
 **Notes:**
 
@@ -405,9 +405,9 @@ Notes:
 
 ![Grade Small D](/docs/images/Grades/grade-small-d.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|     No     |     -     |      None      |
+| Animatable | Alignment |  Suggested Size |
+| :--------: | :-------: | :-------------: |
+|     No     |     -     |      60x60      |
 
 **Notes:**
 
@@ -422,9 +422,9 @@ Notes:
 
 ![Grade Small F](/docs/images/Grades/grade-small-f.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|     No     |     -     |      None      |
+| Animatable | Alignment |  Suggested Size |
+| :--------: | :-------: | :-------------: |
+|     No     |     -     |      60x60      |
 
 **Notes:**
 
@@ -439,9 +439,9 @@ Notes:
 
 ![Grade Small S](/docs/images/Grades/grade-small-s.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|     No     |     -     |      None      |
+| Animatable | Alignment |  Suggested Size |
+| :--------: | :-------: | :-------------: |
+|     No     |     -     |      60x60      |
 
 **Notes:**
 
@@ -456,9 +456,9 @@ Notes:
 
 ![Grade Small SS](/docs/images/Grades/grade-small-ss.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|     No     |     -     |      None      |
+| Animatable | Alignment |  Suggested Size |
+| :--------: | :-------: | :-------------: |
+|     No     |     -     |      60x60      |
 
 **Notes:**
 
@@ -473,9 +473,9 @@ Notes:
 
 ![Grade Small X](/docs/images/Grades/grade-small-x.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|     No     |     -     |      None      |
+| Animatable | Alignment |  Suggested Size |
+| :--------: | :-------: | :-------------: |
+|     No     |     -     |      60x60      |
 
 **Notes:**
 
@@ -534,8 +534,25 @@ Notes:
 
 **Notes:**
 
-- Background image that displays the current judgements the player has.
-- Automatically colored according to the [JudgeColors skin.ini value]()
+- Container image that displays the current judgements the player has.
+- Can be skinned per judgement: `/Judgements/judgement-overlay-{marv, perf, great, good, okay, miss}.png`
+- Colored according to the [JudgeColors skin.ini value]() when not using per judgement images.
+- Setting `JudgementCounterFadeToAlpha` value to `True` changes the element's animation to fade with alpha instead of fading with color.
+
+---
+
+### Judgement Overlay Background
+
+`/Judgements/judgement-overlay-background-{marv, perf, great, good, okay, miss}.png`
+
+| Animatable | Alignment | Suggested Size |
+| :--------: | :-------: | :------------: |
+|     No     | MidRight  |    100x100     |
+
+**Notes:**
+
+- The elements are blank by default.
+- Used as a background per judgement overlay.
 
 ---
 
@@ -545,9 +562,9 @@ Notes:
 
 ![Judgement (Marv)](/docs/images/Judgements/judge-marv.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|    Yes     | MidCenter |       -        |
+| Animatable | Alignment |      Suggested Size        |
+| :--------: | :-------: | :------------------------: |
+|    Yes     | MidCenter |  357x357 maximum per frame |
 
 **Notes:**
 
@@ -563,9 +580,9 @@ Notes:
 
 ![Judgement (Perf)](/docs/images/Judgements/judge-perf.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|    Yes     | MidCenter |       -        |
+| Animatable | Alignment |      Suggested Size        |
+| :--------: | :-------: | :------------------------: |
+|    Yes     | MidCenter |  357x357 maximum per frame |
 
 **Notes:**
 
@@ -581,9 +598,9 @@ Notes:
 
 ![Judgement (Great)](/docs/images/Judgements/judge-great.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|    Yes     | MidCenter |       -        |
+| Animatable | Alignment |      Suggested Size        |
+| :--------: | :-------: | :------------------------: |
+|    Yes     | MidCenter |  357x357 maximum per frame |
 
 **Notes:**
 
@@ -599,9 +616,9 @@ Notes:
 
 ![Judgement (Good)](/docs/images/Judgements/judge-good.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|    Yes     | MidCenter |       -        |
+| Animatable | Alignment |      Suggested Size        |
+| :--------: | :-------: | :------------------------: |
+|    Yes     | MidCenter |  357x357 maximum per frame |
 
 **Notes:**
 
@@ -617,9 +634,9 @@ Notes:
 
 ![Judgement (Okay)](/docs/images/Judgements/judge-okay.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|    Yes     | MidCenter |       -        |
+| Animatable | Alignment |      Suggested Size        |
+| :--------: | :-------: | :------------------------: |
+|    Yes     | MidCenter |  357x357 maximum per frame |
 
 **Notes:**
 
@@ -635,9 +652,9 @@ Notes:
 
 ![Judgement (Miss)](/docs/images/Judgements/judge-miss.png?v=2)
 
-| Animatable | Alignment | Suggested Size |
-| :--------: | :-------: | :------------: |
-|    Yes     | MidCenter |       -        |
+| Animatable | Alignment |      Suggested Size        |
+| :--------: | :-------: | :------------------------: |
+|    Yes     | MidCenter |  357x357 maximum per frame |
 
 **Notes:**
 

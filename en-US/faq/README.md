@@ -4,7 +4,7 @@ name: Frequently Asked Questions
 
 # Frequently Asked Questions
 
-Here you can find answers to some of the most frequently asked questions. If you can't find your question here, feel free to ask for more help on the [Official Quaver Discord Server](https://discord.gg/pDbHYag).
+Here you can find answers to some of the most frequently asked questions. If you can't find your question here, feel free to ask for more help on the [Official Quaver Discord Server](https://discord.gg/quaver).
 
 ## General
 
@@ -15,10 +15,6 @@ Quaver is a community-driven and open source competitive rhythm game. It is insp
 ### How is Quaver different from other games?
 
 The game is fully open-source, which allows anyone to help and improve the game. Furthermore, we are aiming to provide a new VSRG experience by bringing competitive concepts, such as competitive matchmaking.
-
-### How far in development is Quaver?
-
-Quaver is in Early Access, which means the core features have been finished and everyone can freely play the game online. During this phase, the game will receive frequent updates, such as bug fixes and additions of new features.
 
 ### What platforms is Quaver released on?
 
@@ -138,12 +134,6 @@ Running a regular, non-stand-alone build (e.g. from `dotnet build -p Quaver -c D
 ```shell
 ~/.steam/bin/steam-runtime/run.sh Quaver/bin/Debug/netcoreapp2.1/quaver.sh
 ```
-
-#### Windows 7
-
-To run .NET Core on Windows 7, you need some extra dependencies.
-
-Follow the “Install the following” steps on [this](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=netcore31&pivots=os-windows#additional-deps) website.
 
 ### I'm getting "Content File Locked" while trying to download Quaver on Steam
 
